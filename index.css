@@ -12,10 +12,11 @@ body {
   height: 800px;
   overflow: hidden;
 }
-
+nav {
+  z-index: 10;
+}
 ul {
   display: flex;
-  justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
   padding: 20px;
@@ -24,7 +25,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  gap: 2rem;
 }
 
 li:hover {
@@ -36,6 +37,16 @@ li:hover {
   text-align: center;
   padding: 70px;
   cursor: none;
+}
+
+.beauty::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 170px;
+  right: 574px;
 }
 
 h1 {
@@ -60,6 +71,11 @@ img {
   margin: 20px;
 }
 
+.image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 button {
   background-color: #e0b4da;
   border: none;
@@ -74,6 +90,7 @@ button {
 button:hover {
   background-color: #525e4f;
   cursor: pointer;
+  color: #e0b4da;
 }
 
 .buttons {
