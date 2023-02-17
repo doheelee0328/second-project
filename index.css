@@ -100,3 +100,44 @@ button:hover {
   position: relative;
   top: -40px;
 }
+
+/* Blog */
+.blog {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+}
+.blog-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 70px;
+}
+
+.intro {
+  font-size: 30px;
+  color: #f5f6f7;
+  position: relative;
+  left: 40px;
+  top: -100px;
+  cursor: pointer;
+}
+
+.intro::after {
+  content: '';
+  background: #f5f6f7;
+  position: absolute;
+  left: 3px;
+  bottom: -4px;
+  height: 2px;
+  width: 80%;
+}
+
+.intro:hover {
+  color: #f7e4f6;
+}
+.intro:hover::after {
+  background: #f7e4f6;
+}
