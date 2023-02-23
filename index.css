@@ -141,3 +141,17 @@ button:hover {
 .intro:hover::after {
   background: #f7e4f6;
 }
+
+.time {
+  position: relative;
+  top: 50px;
+  left: 40px;
+  bottom: 0px;
+  color: white;
+  font-size: 12px;
+}
+
+.author-time {
+  display: flex;
+  gap: 8px;
+}
